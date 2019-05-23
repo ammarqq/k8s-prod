@@ -1,0 +1,3 @@
+helm dependency update helm
+
+helm install helm -n prod --namespace prod

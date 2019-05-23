@@ -1,0 +1,11 @@
+
+kubectl -n prod \
+create secret generic \
+jenkins-credentials \
+--from-file ../k8s-specs/cluster/jenkins/credentials.xml
+
+
+kubectl -n prod \
+create secret generic \
+jenkins-secrets \
+--from-file ../k8s-specs/cluster/jenkins/secrets
